@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Jibesh Tharu — Digital Creator, Researcher & Administrative Professional based in Bakhundole, Lalitpur." />
+  <meta name="theme-color" content="#0a0d14" id="meta-theme-color" />
+  <title>Jibesh Tharu | Digital Creator, Researcher & Administrative Professional</title>
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <!-- Sticky Top Navigation -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="nav-logo" aria-label="Jibesh Tharu Portfolio Home">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">Jibesh<span class="logo-accent">.creator</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active">Hero</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Actions: Theme Toggle & Hamburger -->
+      <div class="nav-actions">
+        <!-- Dark/Light Mode Toggle -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark and light theme" title="Toggle theme">
+          <!-- Moon Icon (Dark Mode active) -->
+          <svg class="theme-icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+          <!-- Sun Icon (Light Mode active) -->
+          <svg class="theme-icon icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Backdrop Overlay -->
+  <div class="menu-backdrop" id="menu-backdrop" aria-hidden="true"></div>
+
+  <!-- Main Content Container -->
+  <main id="main-content">
+
+    <!-- ===================================================================
+         SECTION 1: HERO (min-height: 100vh)
+         =================================================================== -->
+    <section id="hero" class="fullscreen-section hero-section" aria-label="Hero Introduction">
+      <!-- Decorative background blur orbs -->
+      <div class="bg-orb orb-primary" aria-hidden="true"></div>
+      <div class="bg-orb orb-secondary" aria-hidden="true"></div>
+
+      <div class="section-container hero-container">
+        <!-- Availability pill -->
+        <div class="hero-badge reveal">
+          <span class="status-dot"></span>
+          <span>Digital Creator &bull; Administrative Professional &bull; Researcher</span>
+        </div>
+
+        <!-- Hero Headline & Intro -->
+        <h1 class="hero-title reveal delay-100">
+          Hi, I'm <span class="gradient-text">Jibesh Tharu</span> 👋
+          <br />
+          <span class="hero-tagline">Welcome to my page</span>
+        </h1>
+
+        <!-- Call to Action Buttons -->
+        <div class="hero-actions reveal delay-200">
+          <a href="#about" class="btn btn-primary">
+            <span>About Me</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+          <a href="#projects" class="btn btn-secondary">
+            <span>View My Work</span>
+          </a>
+          <a href="#contact" class="btn btn-outline" aria-label="Jump to Contact section">
+            <span>Get in Touch</span>
+          </a>
+        </div>
+
+        <!-- Social & Quick Contact Row -->
+        <div class="hero-socials reveal delay-300">
+          <span class="social-label">Connect:</span>
+          <a href="mailto:dexillspiker849@gmail.com" class="social-link" aria-label="Send Email to Jibesh Tharu" title="Email: dexillspiker849@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+          <a href="tel:9813178508" class="social-link" aria-label="Call Jibesh Tharu" title="Phone: 9813178508">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/jibeshtharu/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram Profile: @jibeshtharu" title="Instagram: @jibeshtharu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="https://github.com/jibbessh" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile: jibbessh" title="GitHub: jibbessh">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Animated scroll down prompt -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll down to About section">
+        <span class="scroll-mouse">
+          <span class="scroll-wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll Down</span>
+      </a>
+    </section>
+
+
+    <!-- ===================================================================
+         SECTION 2: ABOUT (min-height: 100vh)
+         =================================================================== -->
+    <section id="about" class="fullscreen-section about-section" aria-label="About Jibesh Tharu">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag">[ WHO I AM ]</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Bridging creative digital expression, research rigor, and administrative excellence.</p>
+        </div>
+
+        <!-- About Content Grid (2 Columns) -->
+        <div class="about-grid">
+          <!-- Left Column: Visual Profile & Highlights Card -->
+          <div class="about-card-wrapper reveal delay-100">
+            <div class="about-profile-card">
+              <div class="avatar-frame">
+                <!-- Uses local image AI gen 11.png, with initials fallback -->
+                <img src="AI gen 11.png" alt="Jibesh Tharu Portrait" class="about-avatar-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="avatar-placeholder" style="display: none;">
+                  <span class="avatar-initials">JT</span>
+                </div>
+                <div class="avatar-glow"></div>
+              </div>
+
+              <!-- Profile Details Under Picture -->
+              <div class="about-card-info">
+                <h3 class="about-name">Jibesh Tharu</h3>
+                <p class="about-title">Digital Creator &amp; Administrative Assistant</p>
+                <div class="about-location">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>Bakhundole, Lalitpur</span>
+                </div>
+                <div class="about-contact-pills">
+                  <a href="mailto:dexillspiker849@gmail.com" class="about-contact-pill" title="Email Jibesh">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <span>dexillspiker849@gmail.com</span>
+                  </a>
+                  <a href="tel:9813178508" class="about-contact-pill" title="Call Jibesh">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>9813178508</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Contact & Skills Pill Badges -->
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <span class="stat-number">AI</span>
+                  <span class="stat-label">Creator</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">Admin</span>
+                  <span class="stat-label">Officer</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">Research</span>
+                  <span class="stat-label">Expertise</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Editorial Bio & Values -->
+          <div class="about-bio-wrapper reveal delay-200">
+            <div class="bio-text-block">
+              <p class="bio-paragraph">
+                I am a digital creator, researcher, and administrative professional who enjoys turning ideas and information into work that is clear, useful, and well organized.
+              </p>
+              <p class="bio-paragraph">
+                I create digital content with the help of AI tools, combining creativity with technology to produce visuals, written pieces, and other materials efficiently. I have solid hands-on experience with AI content creation, and I’m always learning new tools and techniques to improve my craft. For me, AI is a creative partner, and the human touch of direction, judgment, and originality is what makes the final result stand out.
+              </p>
+              <p class="bio-paragraph">
+                As a researcher, I dig deep to find reliable information, evaluate sources carefully, and present findings in a way that’s easy to understand and act on. I care about accuracy and take pride in backing ideas with solid evidence.
+              </p>
+              <p class="bio-paragraph">
+                My background as an administrative assistant gives me strong skills in organization, time management, communication, and attention to detail. I know how to keep projects on track, manage tasks and schedules, and make sure nothing slips through the cracks.
+              </p>
+              <p class="bio-paragraph">
+                Together, these skills let me manage a project from the first idea to the finished result: researching it, creating it, and keeping it running smoothly.
+              </p>
+            </div>
+
+            <!-- Pillars / Core Values Grid -->
+            <div class="pillars-grid">
+              <div class="pillar-card">
+                <div class="pillar-icon">🎨</div>
+                <div class="pillar-content">
+                  <h4>AI &amp; Digital Content</h4>
+                  <p>Creating compelling visuals, videos, and media combining AI speed with human direction.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">🔍</div>
+                <div class="pillar-content">
+                  <h4>In-Depth Research</h4>
+                  <p>Digging deep to evaluate sources, extract reliable facts, and synthesize actionable findings.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">📋</div>
+                <div class="pillar-content">
+                  <h4>Administrative Excellence</h4>
+                  <p>Keeping schedules, office systems, and documents organized with meticulous attention to detail.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">⚙️</div>
+                <div class="pillar-content">
+                  <h4>Workflow Automation</h4>
+                  <p>Streamlining tasks and connecting data pipelines with Make.com and Google Sheets.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         SECTION 3: SKILLS (min-height: 100vh)
+         =================================================================== -->
+    <section id="skills" class="fullscreen-section skills-section" aria-label="Skills and Technical Stack">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag">[ MY EXPERTISE ]</span>
+          <h2 class="section-title">Skills &amp; Capabilities</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Proficiencies across generative AI, visual design, automation, and office administration.</p>
+        </div>
+
+        <!-- Skills Categories Grid -->
+        <div class="skills-categories-grid">
+
+          <!-- Category 1: AI & Generative Media -->
+          <div class="skill-category-card reveal delay-100">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+              </div>
+              <h3 class="category-title">AI Content &amp; Media</h3>
+            </div>
+            <p class="category-desc">Leveraging cutting-edge AI systems for visual and video creation.</p>
+            <div class="skill-pills-list">
+              <span class="skill-pill">Higgsfield AI</span>
+              <span class="skill-pill">AI Video Generation</span>
+              <span class="skill-pill">Prompt Engineering</span>
+              <span class="skill-pill">Creative Direction</span>
+              <span class="skill-pill">Visual Media Synthesis</span>
+              <span class="skill-pill">AI Writing &amp; Copy</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Visual Design & Creative Tools -->
+          <div class="skill-category-card reveal delay-200">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+              </div>
+              <h3 class="category-title">Design &amp; Visual Creation</h3>
+            </div>
+            <p class="category-desc">Crafting polished graphics, presentations, and digital brand collateral.</p>
+            <div class="skill-pills-list">
+              <span class="skill-pill">Canva</span>
+              <span class="skill-pill">Digital Graphic Design</span>
+              <span class="skill-pill">Social Media Content</span>
+              <span class="skill-pill">Presentation Decks</span>
+              <span class="skill-pill">Visual Storytelling</span>
+              <span class="skill-pill">Brand Asset Layout</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Automation & Spreadsheets -->
+          <div class="skill-category-card reveal delay-300">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+              </div>
+              <h3 class="category-title">Automation &amp; Data Tracking</h3>
+            </div>
+            <p class="category-desc">Connecting apps and tracking records to eliminate manual friction.</p>
+            <div class="skill-pills-list">
+              <span class="skill-pill">Make.com</span>
+              <span class="skill-pill">Google Sheets</span>
+              <span class="skill-pill">Workflow Automation</span>
+              <span class="skill-pill">Data Management</span>
+              <span class="skill-pill">Formulas &amp; Tracking</span>
+              <span class="skill-pill">Process Optimization</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Administrative & Research -->
+          <div class="skill-category-card reveal delay-400">
+            <div class="category-header">
+              <div class="category-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+              </div>
+              <h3 class="category-title">Research &amp; Administration</h3>
+            </div>
+            <p class="category-desc">Rigorous factual analysis, office operations, and schedule oversight.</p>
+            <div class="skill-pills-list">
+              <span class="skill-pill">Deep Research</span>
+              <span class="skill-pill">Source Verification</span>
+              <span class="skill-pill">Time Management</span>
+              <span class="skill-pill">Task Scheduling</span>
+              <span class="skill-pill">Office Operations</span>
+              <span class="skill-pill">Attention to Detail</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         SECTION 4: EXPERIENCE (min-height: 100vh)
+         =================================================================== -->
+    <section id="experience" class="fullscreen-section experience-section" aria-label="Work Experience">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag">[ CAREER JOURNEY ]</span>
+          <h2 class="section-title">Work Experience</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Professional experience in office administration, operations, and creative project management.</p>
+        </div>
+
+        <!-- Vertical Timeline -->
+        <div class="timeline">
+          
+          <!-- Timeline Item 1: DevOps Technology Company (Sanepa) -->
+          <div class="timeline-item reveal delay-100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-period">Current Role</span>
+                <span class="timeline-badge badge-current">Full-Time</span>
+              </div>
+              <h3 class="timeline-role">Administrative Officer</h3>
+              <h4 class="timeline-company">Devops Technology Pvt. Ltd. &bull; Sanepa, Lalitpur</h4>
+              <p class="timeline-desc">
+                Serving as a full-time Administrative Officer managing daily company operations, executive correspondence, 
+                and office coordination. Keeping tasks, schedules, and cross-team workflows structured so nothing slips through the cracks. 
+                Utilizing Google Sheets and automation tools to maintain accurate internal records and streamline administrative processes.
+              </p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">Office Administration</span>
+                <span class="timeline-tag">Google Sheets</span>
+                <span class="timeline-tag">Schedule Management</span>
+                <span class="timeline-tag">Operations</span>
+                <span class="timeline-tag">Sanepa</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Digital Content & AI Creator -->
+          <div class="timeline-item reveal delay-200">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-period">Ongoing</span>
+                <span class="timeline-badge">Creative</span>
+              </div>
+              <h3 class="timeline-role">Digital Creator &amp; AI Specialist</h3>
+              <h4 class="timeline-company">Independent &bull; Bakhundole, Lalitpur</h4>
+              <p class="timeline-desc">
+                Producing dynamic digital content and visual media using generative AI platforms including Higgsfield AI and design suites like Canva. 
+                Directing creative prompts, editing visuals, and maintaining a high standard of human direction, originality, and visual polish.
+              </p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">Higgsfield AI</span>
+                <span class="timeline-tag">Canva</span>
+                <span class="timeline-tag">AI Content Creation</span>
+                <span class="timeline-tag">Visual Storytelling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Researcher & Workflow Automation Specialist -->
+          <div class="timeline-item reveal delay-300">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-period">Ongoing</span>
+                <span class="timeline-badge">Research &amp; Systems</span>
+              </div>
+              <h3 class="timeline-role">Researcher &amp; Workflow Specialist</h3>
+              <h4 class="timeline-company">Research &amp; Automation Initiatives</h4>
+              <p class="timeline-desc">
+                Conducting comprehensive investigations, evaluating primary and secondary sources, and synthesizing evidence-backed findings. 
+                Designing automated notification and data-logging workflows with Make.com and Google Sheets to turn complex research into actionable intelligence.
+              </p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">Deep Research</span>
+                <span class="timeline-tag">Source Verification</span>
+                <span class="timeline-tag">Make.com</span>
+                <span class="timeline-tag">Data Synthesis</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         SECTION 5: PROJECTS (min-height: 100vh)
+         =================================================================== -->
+    <section id="projects" class="fullscreen-section projects-section" aria-label="Selected Projects">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag">[ FEATURED WORK ]</span>
+          <h2 class="section-title">Selected Projects</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Showcase of AI-assisted content creation, administrative workflows, and structured research.</p>
+        </div>
+
+        <!-- 3 Project Cards Responsive Grid -->
+        <div class="projects-grid">
+
+          <!-- Project Card 1: AI Video & Media Creation -->
+          <article class="project-card reveal delay-100">
+            <div class="project-preview preview-gradient-1">
+              <div class="preview-mockup-header">
+                <span class="mockup-dot dot-red"></span>
+                <span class="mockup-dot dot-yellow"></span>
+                <span class="mockup-dot dot-green"></span>
+                <span class="mockup-url">higgsfield.ai/creations</span>
+              </div>
+              <div class="preview-body">
+                <div class="mockup-chart-bars">
+                  <div class="mockup-bar bar-1"></div>
+                  <div class="mockup-bar bar-2"></div>
+                  <div class="mockup-bar bar-3"></div>
+                  <div class="mockup-bar bar-4"></div>
+                  <div class="mockup-bar bar-5"></div>
+                </div>
+                <div class="mockup-sparkline"></div>
+              </div>
+              <span class="project-badge">AI &amp; Media</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <h3 class="project-title">AI Generative Video &amp; Visual Showcase</h3>
+              </div>
+              <p class="project-description">
+                A curated portfolio of AI-generated animations and visual assets produced using Higgsfield AI and styled in Canva. Combines human artistic direction with state-of-the-art generative video models.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Higgsfield AI</span>
+                <span class="tech-tag">Canva</span>
+                <span class="tech-tag">AI Prompting</span>
+                <span class="tech-tag">Creative Direction</span>
+              </div>
+              <div class="project-links">
+                <a href="#about" class="project-btn btn-demo" aria-label="View details about AI creation">
+                  <span>Learn More</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </a>
+                <a href="#contact" class="project-btn btn-code" aria-label="Contact Jibesh regarding creative work">
+                  <span>Inquire</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2: Administrative Automation with Make.com & Google Sheets -->
+          <article class="project-card reveal delay-200">
+            <div class="project-preview preview-gradient-2">
+              <div class="preview-mockup-header">
+                <span class="mockup-dot dot-red"></span>
+                <span class="mockup-dot dot-yellow"></span>
+                <span class="mockup-dot dot-green"></span>
+                <span class="mockup-url">make.com/scenarios/admin-pipeline</span>
+              </div>
+              <div class="preview-body">
+                <div class="mockup-shop-grid">
+                  <div class="mockup-shop-card"></div>
+                  <div class="mockup-shop-card"></div>
+                  <div class="mockup-shop-card"></div>
+                </div>
+              </div>
+              <span class="project-badge">Automation &amp; Data</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <h3 class="project-title">Administrative Operations &amp; Task Pipeline</h3>
+              </div>
+              <p class="project-description">
+                An automated administrative system connecting Google Sheets with Make.com to synchronize meeting schedules, organize office logs, and trigger automated reminders with zero manual effort.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Make.com</span>
+                <span class="tech-tag">Google Sheets</span>
+                <span class="tech-tag">Operations</span>
+                <span class="tech-tag">Task Scheduling</span>
+              </div>
+              <div class="project-links">
+                <a href="#experience" class="project-btn btn-demo" aria-label="View administrative experience">
+                  <span>View Role</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </a>
+                <a href="#contact" class="project-btn btn-code" aria-label="Inquire about automation">
+                  <span>Connect</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3: Deep Research & Source Synthesis -->
+          <article class="project-card reveal delay-300">
+            <div class="project-preview preview-gradient-3">
+              <div class="preview-mockup-header">
+                <span class="mockup-dot dot-red"></span>
+                <span class="mockup-dot dot-yellow"></span>
+                <span class="mockup-dot dot-green"></span>
+                <span class="mockup-url">research-insights.workspace</span>
+              </div>
+              <div class="preview-body">
+                <div class="mockup-kanban-board">
+                  <div class="mockup-col col-todo"></div>
+                  <div class="mockup-col col-progress"></div>
+                  <div class="mockup-col col-done"></div>
+                </div>
+              </div>
+              <span class="project-badge">Research &amp; Analysis</span>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <h3 class="project-title">Verified Research &amp; Information Synthesis</h3>
+              </div>
+              <p class="project-description">
+                Rigorous research synthesis gathering multi-source data, validating factual accuracy, and compiling clear executive reports ready for decision-makers and organizational implementation.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Deep Research</span>
+                <span class="tech-tag">Fact Checking</span>
+                <span class="tech-tag">Information Synthesis</span>
+                <span class="tech-tag">Documentation</span>
+              </div>
+              <div class="project-links">
+                <a href="#about" class="project-btn btn-demo" aria-label="Learn more about research methodology">
+                  <span>Methodology</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </a>
+                <a href="#contact" class="project-btn btn-code" aria-label="Contact Jibesh for research assistance">
+                  <span>Collaborate</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         SECTION 6: CONTACT (min-height: 100vh)
+         =================================================================== -->
+    <section id="contact" class="fullscreen-section contact-section" aria-label="Contact Information and Inquiry Form">
+      <div class="section-container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag">[ GET IN TOUCH ]</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">Have a project, administrative inquiry, or research proposal? Drop me a line.</p>
+        </div>
+
+        <!-- Contact Two-Column Layout -->
+        <div class="contact-grid">
+          
+          <!-- Column 1: Info Cards -->
+          <div class="contact-info-col reveal delay-100">
+            <h3 class="contact-info-title">Let's collaborate on clear, high-impact work.</h3>
+            <p class="contact-info-desc">
+              Whether you need creative digital content, rigorous research synthesis, or organized administrative support, 
+              I am open to new opportunities and projects. Feel free to reach out directly:
+            </p>
+
+            <div class="contact-cards-list">
+              <!-- Direct Email Card -->
+              <div class="contact-detail-card">
+                <div class="detail-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div class="detail-text">
+                  <span class="detail-label">Direct Email</span>
+                  <a href="mailto:dexillspiker849@gmail.com" class="detail-value" id="email-text">dexillspiker849@gmail.com</a>
+                </div>
+                <button class="btn-copy-email" id="copy-email-btn" aria-label="Copy email address to clipboard" title="Copy email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                </button>
+              </div>
+
+              <!-- Contact Phone Card -->
+              <div class="contact-detail-card">
+                <div class="detail-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="detail-text">
+                  <span class="detail-label">Contact Number</span>
+                  <a href="tel:9813178508" class="detail-value">9813178508</a>
+                </div>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-detail-card">
+                <div class="detail-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="detail-text">
+                  <span class="detail-label">Location</span>
+                  <span class="detail-value">Bakhundole, Lalitpur, Nepal</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Handles Links -->
+            <div class="contact-socials-wrapper">
+              <span class="socials-title">Connect with me:</span>
+              <div class="socials-row">
+                <a href="mailto:dexillspiker849@gmail.com" class="social-chip" aria-label="Email Jibesh Tharu" title="Email: dexillspiker849@gmail.com">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  <span>Email</span>
+                </a>
+                <a href="tel:9813178508" class="social-chip" aria-label="Call Jibesh Tharu" title="Call: 9813178508">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span>Call</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/jibbessh" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub Profile: jibbessh" title="GitHub: jibbessh">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.instagram.com/jibeshtharu/" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="Instagram: @jibeshtharu" title="Instagram: @jibeshtharu">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                  <span>jibeshtharu</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Working Interactive Form -->
+          <div class="contact-form-col reveal delay-200">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Your Name <span class="required-star">*</span></label>
+                  <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Jane Doe" required autocomplete="name" />
+                  <span class="field-error" id="name-error">Please enter your name</span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Email Address <span class="required-star">*</span></label>
+                  <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. jane@company.com" required autocomplete="email" />
+                  <span class="field-error" id="email-error">Please enter a valid email</span>
+                </div>
+              </div>
+
+              <!-- Subject Field -->
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject</label>
+                <input type="text" id="form-subject" name="subject" class="form-input" placeholder="e.g. Collaboration / Administrative Query" />
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group">
+                <label for="form-message" class="form-label">Your Message <span class="required-star">*</span></label>
+                <textarea id="form-message" name="message" class="form-textarea" rows="5" placeholder="Tell me about your idea, project, or inquiry..." required></textarea>
+                <span class="field-error" id="message-error">Please enter your message</span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-submit">
+                <span class="btn-text">Send Message</span>
+                <svg class="btn-icon-send" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                <span class="btn-spinner" aria-hidden="true"></span>
+              </button>
+
+              <!-- Form Alert / Toast Message -->
+              <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Section Footer -->
+        <footer class="site-footer">
+          <div class="footer-inner">
+            <div class="footer-contact-bar">
+              <span class="footer-contact-heading">Connect &amp; Contact:</span>
+              <div class="footer-chips-row">
+                <a href="https://www.instagram.com/jibeshtharu/" target="_blank" rel="noopener noreferrer" class="footer-chip" aria-label="Instagram @jibeshtharu" title="Instagram: @jibeshtharu">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                  <span>Instagram: <strong>@jibeshtharu</strong></span>
+                </a>
+                <a href="tel:9813178508" class="footer-chip" aria-label="Call 9813178508" title="Call: 9813178508">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <span>Call: <strong>9813178508</strong></span>
+                </a>
+                <a href="mailto:dexillspiker849@gmail.com" class="footer-chip" aria-label="Email dexillspiker849@gmail.com" title="Email: dexillspiker849@gmail.com">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  <span>Email: <strong>dexillspiker849@gmail.com</strong></span>
+                </a>
+                <a href="https://github.com/jibbessh" target="_blank" rel="noopener noreferrer" class="footer-chip" aria-label="GitHub Profile: jibbessh" title="GitHub: jibbessh">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                  <span>GitHub: <strong>jibbessh</strong></span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-chip" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                  <span><strong>LinkedIn Profile</strong></span>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-bottom-row">
+              <p class="footer-copy">&copy; <span id="current-year">2026</span> Jibesh Tharu. All rights reserved.</p>
+              <p class="footer-note">Handcrafted with semantic HTML5, modern CSS3 &amp; vanilla JavaScript.</p>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top of page" title="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m18 15-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <!-- JavaScript logic -->
+  <script src="script.js"></script>
+</body>
+</html>
